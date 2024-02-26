@@ -1,0 +1,96 @@
+.hed {
+  display: flex;
+  width: 3000px;
+  height: 100px;
+  font-family: "Pacifico", cursive;
+  justify-content: left;
+  background: transparent;
+  font-size: 3em;
+  font-weight: 550;
+  color: rgb(182, 170, 170);
+  position: absolute;
+  top: 3%;
+  left: 25px;
+}
+
+.card-img-top {
+  width: 28rem;
+  height: 290px;
+}
+.card {
+  width: 28rem;
+  margin-left: 44rem;
+  margin-top: 3rem;
+  margin-bottom: -2rem;
+}
+.lastCard {
+  margin-bottom: 4rem;
+}
+
+/*.all {
+  /* background-color: black; */
+/*opacity: 0.7;
+  /* padding: 10px;
+  width: 1400px;
+  height: 2000px;
+  margin: auto; */
+
+/* padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #000 !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}*/
+
+.set {
+  align-items: center;
+  color: antiquewhite;
+  font-family: "Lucida Handwriting", cursive;
+  display: block;
+  font-size: 35px;
+  /*padding: 0;
+  font-size: 45px;
+  font-family: monospace;
+  /*position: fixed;*/
+  margin-left: 73%;
+  /*bottom: 70%;
+  /*right: 30%;*/
+  margin-top: 3%;
+  width: 680px;
+  /*content: inherit;
+  /*border: transparent;
+  /* border: 3px solid #73ad21; */
+}
+.capital {
+  align-items: center;
+  color: antiquewhite;
+  font-family: monospace;
+  display: block;
+  font-size: 70px;
+  margin-left: 64%;
+  bottom: 70%;
+  /*margin-top: 5%;*/
+  width: 680px;
+  content: inherit;
+}
+
+.logout {
+  margin-left: 92%;
+  margin-bottom: 2%;
+}
+.input-box1 input {
+  width: 100%;
+  height: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 16px;
+  color: black;
+  padding: 5px 10px 10px 15px;
+}

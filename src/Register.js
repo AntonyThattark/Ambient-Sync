@@ -1,22 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Register.css";
 import { FaUser, FaLock } from "react-icons/fa";
 import { BsFileLock } from "react-icons/bs";
 import { MdVpnKey } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
-import Loader from "./loader";
+// import Loader from "./loader";
 
 const Register = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 2000);
-
   return (
     <div className="inter">
-      {isLoading ? (
-        <Loader />
-      ) : (
         <div className="normal">
           <h2 className="head">AMBIENT SYNC</h2>
           <div className="wrapper">
@@ -50,7 +42,6 @@ const Register = () => {
             </form>
           </div>
         </div>
-      )}
     </div>
   );
 };

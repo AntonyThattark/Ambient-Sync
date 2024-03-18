@@ -4,7 +4,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
 function Card() {
-  const [brightness, setBrightness] = useState(1);
+  const [brightness, setBrightness] = useState(0);
   const [off, setOff] = useState(false);
   const finalBrightness = off ? 0 : brightness ** 2;
   return (

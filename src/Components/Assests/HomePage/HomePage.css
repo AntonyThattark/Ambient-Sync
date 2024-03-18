@@ -11,6 +11,14 @@
   top: 35%;
   left: 28%;
 }
+
+.interHome {
+  background-color: #3a4c3e;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
 /*.normal {
   text-align: center;
   /*display: flex;*/

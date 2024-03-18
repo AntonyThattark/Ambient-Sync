@@ -1,9 +1,19 @@
-import React from "react";
+// import React from "react";
+import React, { useState } from "react";
 import "./HomePage.css";
 import Button from "react-bootstrap/Button";
+import Loader from "../../../loader";
 const HomePage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 2000);
+
   return (
-    <div className="inter">
+    <div className="interHome">
+      {isLoading ? (
+        <Loader />
+      ) :(
       <div className="normal">
         <h2 className="head1">AMBIENT SYNC</h2>
         <div className="mb-2">
@@ -20,8 +30,9 @@ const HomePage = () => {
           </a>
         </div>
       </div>
+      )}
     </div>
-  );
+    );
 };
 
 export default HomePage;

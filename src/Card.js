@@ -2,6 +2,7 @@ import React from "react";
 import "./Card.css";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
+import Dropdown from "react-bootstrap/Dropdown";
 function Card() {
   const [brightness, setBrightness] = useState(1);
   const [off, setOff] = useState(false);
@@ -9,6 +10,19 @@ function Card() {
   return (
     <div className="all">
       <div>
+        <h className="dropDown">
+          <Dropdown>
+            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+              ROOM 1
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">ROOM 2</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">ROOM 3</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">ROOM 4</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </h>
         <h2 className="set">Set Your</h2>
         <h className="capital">PREFERENCE</h>
       </div>
@@ -145,7 +159,7 @@ function Card() {
                   <input type="email" placeholder="Email" required />
                 </div>
                 <div className="input-box1">
-                  <input type="password" placeholder="Password" required />
+                  <input type="text" placeholder="Room Id" required />
                 </div>
                 <Button variant="primary">Add</Button>{" "}
               </div>

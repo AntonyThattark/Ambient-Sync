@@ -1,20 +1,20 @@
 .head {
   display: flex;
-  width: 45%;
+  width: 64%;
   height: 20%;
   justify-content: left;
   background: transparent;
-  font-size: 400%;
+  font-size: 80px;
   font-weight: 25;
   color: antiquewhite;
   position: absolute;
-  top: 3%;
-  left: 37%;
+  top: 8%;
+  left: 36%;
 }
 .wrapper {
   position: relative;
-  top:7%;
-  width: 25%;
+  top: 7%;
+  width: 20%;
   background: transparent;
   border: 2px solid rgba(38, 23, 23, 0.2);
   backdrop-filter: blur(30px);
@@ -31,6 +31,7 @@
 .wrapper h2 {
   font-size: 36px;
   text-align: center;
+  width: 100%;
 }
 
 .wrapper .input-box {
@@ -79,7 +80,8 @@
   font-weight: 700;
 }
 .inter {
-  background-color: #3a4c3e;
+  /*background-color: #3a4c3e;*/
+  background-color: black;
   display: flex;
   background-position: center;
   background-size: cover;

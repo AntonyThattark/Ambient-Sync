@@ -8,12 +8,13 @@
   font-weight: 25;
   color: antiquewhite;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 28%;
 }
 
 .interHome {
-  background-color: #3a4c3e;
+  /*background-color: #3a4c3e;*/
+  background-color: black;
   display: flex;
   background-position: center;
   background-size: cover;

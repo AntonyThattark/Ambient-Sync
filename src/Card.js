@@ -6,7 +6,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 function Card() {
   const [brightness, setBrightness] = useState(0);
   const [off, setOff] = useState(false);
-  const finalBrightness = off ? 0 : brightness ** 2;
+  const finalBrightness = off ? 0 : brightness ** 1;
   return (
     <div className="all">
       <div>
@@ -23,7 +23,7 @@ function Card() {
             </Dropdown.Menu>
           </Dropdown>
         </h>
-        <h2 className="set">Set Your</h2>
+        <h2 className="set">Set</h2>
         <h className="capital">PREFERENCE</h>
       </div>
       <div className="container">
@@ -55,23 +55,24 @@ function Card() {
                           <input
                             type="range"
                             min={0}
-                            max={5}
+                            max={100}
                             step={1}
                             value={brightness}
                             onChange={(event) => {
                               setBrightness(event.target.valueAsNumber);
                             }}
                           />
+                          <> </>
                           <button onClick={() => setOff((m) => !m)}>
                             {off ? "Off" : "On"}
                           </button>
                         </div>
                         <div>
-                          <p>Final Brightness: {finalBrightness.toFixed(3)}</p>
+                          <p>Final Brightness: {finalBrightness.toFixed(0)}</p>
                         </div>
                       </p>
                       <p></p>
-                      <a href="/" className="btn btn-primary">
+                      <a href="/Settings" className="btn btn-primary">
                         Set
                       </a>
                     </div>
@@ -105,7 +106,7 @@ function Card() {
                 </select>
               </div>
               <p></p>
-              <a href="/" className="btn btn-primary">
+              <a href="/Settings" className="btn btn-primary">
                 Set
               </a>
             </div>
@@ -138,7 +139,7 @@ function Card() {
                     aria-describedby="inputGroup-sizing-default"
                   />
                 </div>
-                <a href="/" className="btn btn-primary">
+                <a href="/Settings" className="btn btn-primary">
                   Set
                 </a>
               </div>
@@ -167,12 +168,14 @@ function Card() {
           </div>
         </div>
       </div>
+
       <a href="/">
         <Button variant="secondary" className="logout">
           Log Out
         </Button>
       </a>
     </div>
+
     // </React.Fragment>
   );
 }

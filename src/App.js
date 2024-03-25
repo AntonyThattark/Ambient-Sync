@@ -1,6 +1,7 @@
 import Login from "./Components/Assests/Login/Login";
 //import Face from "./face";
 import Settings from "./settings";
+import Shared from "./shared";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+  },
+  {
+    path: "/shared",
+    element: <Shared />,
   },
 ]);
 function App() {

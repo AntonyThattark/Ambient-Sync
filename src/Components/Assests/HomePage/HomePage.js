@@ -13,26 +13,26 @@ const HomePage = () => {
     <div className="interHome">
       {isLoading ? (
         <Loader />
-      ) :(
-      <div className="normal">
-        <h2 className="head1">AMBIENT SYNC</h2>
-        <div className="mb-2">
-          <a href="/Login">
-            <Button variant="secondary" size="lg" className="button">
-              LOGIN
-            </Button>
-          </a>
-          {"  "}
-          <a href="/Register">
-            <Button variant="light" className="button" size="lg">
-              Register
-            </Button>{" "}
-          </a>
+      ) : (
+        <div className="normal">
+          <h2 className="head1">AMBIENT SYNC</h2>
+          <div className="mb-2">
+            <a href="/Login">
+              <Button variant="secondary" size="lg" className="button">
+                Login
+              </Button>
+            </a>
+            {"  "}
+            <a href="/Register">
+              <Button variant="light" className="button" size="lg">
+                Register
+              </Button>{" "}
+            </a>
+          </div>
         </div>
-      </div>
       )}
     </div>
-    );
+  );
 };
 
 export default HomePage;

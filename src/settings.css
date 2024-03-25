@@ -1,5 +1,6 @@
 .background {
-  background-color: #3a4c3e;
+  /*background-color: #3a4c3e;*/
+  background-color: black;
   display: flex;
   background-position: center;
   background-size: cover;
